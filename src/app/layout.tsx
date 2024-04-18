@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import HomeContextProvider from "./context/HomeContext";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ["100", "200", "500", "700", "800"],
+  subsets: ["latin"],
+  variable: "--font-poppins",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,13 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main className="w-screen h-screen flex flex-col items-center justify-center bg-slate-300 text-red-400">
-          <h1>Layout Principal</h1>
-          <Link href={'/multimidia'} className= "w-48 h-10 flex flex items-center justify-center bg-purple text-purple">Página de multimidia</Link>
-        {children}
-        </main>
-      </body>
+      <HomeContextProvider>
+        <body className={poppins.variable}>{children}</body>
+      </HomeContextProvider>
     </html>
   );
 }
