@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #4675a1;
+  background-color: #a15146;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -30,48 +30,48 @@ body {
 .progress-bar {
   width: 100%;
   height: 8px;
-  background-color: #fff; /* Cor da barra de progresso */
-  border-radius: 5px; /* Bordas arredondadas para uma aparência mais suave */
+  background-color: #fff;
+  border-radius: 5px; 
   margin-top: 0.5rem;
 }
 
 .volume-control {
-  margin-top: 1rem; /* Um pouco mais de espaço entre os controles de volume e a barra de progresso */
+  margin-top: 1rem; 
 }
 
 .play-button {
-  margin-top: 1.5rem; /* Aumentei o espaço acima do botão de reprodução para mais destaque */
+  margin-top: 1.5rem;
 }
 
 .video-selection {
   width: 35%;
   height: 100vh;
   overflow-y: auto;
-  background-color: #fff; /* Adicionei uma cor de fundo branca para destacar a seção de seleção de vídeo */
-  border-radius: 10px; /* Bordas arredondadas para uma aparência mais suave */
-  padding: 1rem; /* Adicionei um preenchimento interno para espaço extra */
+  background-color: #fff; 
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 .video-selection button {
   width: 100%;
-  margin-bottom: 0.5rem; /* Reduzi um pouco o espaço entre os botões */
-  padding: 0.5rem; /* Adicionei preenchimento interno para um toque de conforto */
-  background-color: #ff7f50; /* Cor de destaque para os botões */
-  color: #fff; /* Texto branco para melhor contraste */
-  border: none; /* Removi as bordas para uma aparência mais limpa */
-  border-radius: 5px; /* Bordas arredondadas para combinar com o estilo */
-  cursor: pointer; /* Cursor de apontador para indicar que é clicável */
-  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+  margin-bottom: 0.5rem;
+  padding: 0.5rem; 
+  background-color: #ff7f50; 
+  color: #fff;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
 }
 
 .video-selection button:hover {
-  background-color: #ff6347; /* Mudança de cor suave ao passar o mouse para uma interação mais intuitiva */
+  background-color: #ff6347; 
 }
 
 .filter-selection {
-  margin-top: 1.5rem; /* Aumentei um pouco o espaço acima da seleção de filtro para melhor separação visual */
+  margin-top: 1.5rem; 
 }
 
 .time-display {
-  margin-top: 1rem; /* Aumentei o espaço acima da exibição de tempo para uma melhor separação */
+  margin-top: 1rem;
 }
