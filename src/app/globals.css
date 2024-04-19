@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   background-color: #4675a1;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -23,35 +23,55 @@ body {
 
 .video-player {
   width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .progress-bar {
   width: 100%;
-}
-
-.volume-control {
+  height: 8px;
+  background-color: #fff; /* Cor da barra de progresso */
+  border-radius: 5px; /* Bordas arredondadas para uma aparência mais suave */
   margin-top: 0.5rem;
 }
 
+.volume-control {
+  margin-top: 1rem; /* Um pouco mais de espaço entre os controles de volume e a barra de progresso */
+}
+
 .play-button {
-  margin-top: 1rem;
+  margin-top: 1.5rem; /* Aumentei o espaço acima do botão de reprodução para mais destaque */
 }
 
 .video-selection {
   width: 35%;
   height: 100vh;
   overflow-y: auto;
+  background-color: #fff; /* Adicionei uma cor de fundo branca para destacar a seção de seleção de vídeo */
+  border-radius: 10px; /* Bordas arredondadas para uma aparência mais suave */
+  padding: 1rem; /* Adicionei um preenchimento interno para espaço extra */
 }
 
 .video-selection button {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem; /* Reduzi um pouco o espaço entre os botões */
+  padding: 0.5rem; /* Adicionei preenchimento interno para um toque de conforto */
+  background-color: #ff7f50; /* Cor de destaque para os botões */
+  color: #fff; /* Texto branco para melhor contraste */
+  border: none; /* Removi as bordas para uma aparência mais limpa */
+  border-radius: 5px; /* Bordas arredondadas para combinar com o estilo */
+  cursor: pointer; /* Cursor de apontador para indicar que é clicável */
+  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.video-selection button:hover {
+  background-color: #ff6347; /* Mudança de cor suave ao passar o mouse para uma interação mais intuitiva */
 }
 
 .filter-selection {
-  margin-top: 1rem;
+  margin-top: 1.5rem; /* Aumentei um pouco o espaço acima da seleção de filtro para melhor separação visual */
 }
 
 .time-display {
-  margin-top: 0.5rem;
+  margin-top: 1rem; /* Aumentei o espaço acima da exibição de tempo para uma melhor separação */
 }
